@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GuessTheNumber"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Guess the number" Height="350" Width="525" MinWidth="525" MinHeight="350" MaxWidth="800" MaxHeight="600">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="3" Text="Guess the number" FontSize="56" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Name="OutputTextBlock" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Text="Start guessing a number." VerticalAlignment="Center" />
+        <TextBox Name="InputTextBox" Grid.Row="2" Grid.Column="1" Height="20" VerticalAlignment="Bottom" Margin="0,0,0,5"/>
+        <Button Content="Guess" Height="20" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" Margin="0,0,0,5" Click="Button_Click"/>
+        <TextBlock Name="HighScoreTextBlock" Grid.Row="4" Grid.Column="0" Text="No Current High Score" VerticalAlignment="Center" Margin="10,0,0,0" />
     </Grid>
 </Window>
