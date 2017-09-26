@@ -20,12 +20,20 @@ namespace GuessTheNumber
     /// </summary>
     public partial class MainWindow : Window
     {
+        Random _randomizer;
+        int _secretNumber;
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Guess_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RunAgain_Click(object sender, RoutedEventArgs e)
         {
 
         }
