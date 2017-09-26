@@ -20,10 +20,10 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.ColumnSpan="3" Text="Guess the number" FontSize="56" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBlock Name="OutputTextBlock" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Text="Start guessing a number." VerticalAlignment="Center" />
+        <TextBlock Name="OutputTextBlock" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" FontSize="18" Text="Start guessing a number." VerticalAlignment="Center" />
         <TextBox Name="InputTextBox" Grid.Row="2" Grid.Column="1" Height="20" VerticalAlignment="Bottom" Margin="0,0,0,5"/>
-        <Button Content="Guess" Height="20" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" Margin="0,0,0,5" Click="Guess_Click"/>
-        <Button Content="Run again..." Height="20" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" Margin="0,0,0,5" Visibility="Hidden" Click="RunAgain_Click" />
+        <Button Name="GuessButton" Content="Guess" Height="20" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" Margin="0,0,0,5" Click="Guess_Click"/>
+        <Button Name="RunAgainButton" Content="Run again..." Height="20" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" Margin="0,0,0,5" Visibility="Hidden" Click="RunAgain_Click" />
         <TextBlock Name="HighScoreTextBlock" Grid.Row="4" Grid.Column="0" Text="No Current High Score" VerticalAlignment="Center" Margin="10,0,0,0" />
     </Grid>
 </Window>
