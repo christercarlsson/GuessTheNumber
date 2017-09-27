@@ -4,6 +4,53 @@
              xmlns:local="clr-namespace:GuessTheNumber"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <!-- Header text style-->
+        <Style BasedOn="{StaticResource {x:Type TextBlock}}"
+               TargetType="TextBlock" 
+               x:Key="headerTextStyle">
+            <Setter Property="FontSize" Value="54" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        
+        <!-- Output text style -->
+        <Style BasedOn="{StaticResource {x:Type TextBlock}}"
+               TargetType="TextBlock" 
+               x:Key="outputTextStyle">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        
+        <!-- Input box style -->
+        <Style BasedOn="{StaticResource {x:Type TextBox}}"
+               TargetType="TextBox"
+               x:Key="inputBoxStyle">
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+            <Setter Property="Margin" Value="10,0,10,5"/>
+            <Setter Property="Height" Value="20" />
+        </Style>
+        
+        <!-- Button style-->
+        <Style BasedOn="{StaticResource {x:Type Button}}"
+               TargetType="Button"
+               x:Key="buttonStyle">
+            <Setter Property="Height" Value="20" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="Foreground" Value="#444444" />
+            <Setter Property="FontWeight" Value="DemiBold" />
+            <Setter Property="FontFamily" Value="Calibri" />
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Offset="0.0" Color="#777777" />
+                            <GradientStop Offset="1.0" Color="#FFFFFF" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>
