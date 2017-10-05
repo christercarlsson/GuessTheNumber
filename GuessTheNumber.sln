@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumber.BL", "GuessT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumber.VM", "GuessTheNumber.VM\GuessTheNumber.VM.csproj", "{F8E4A8EC-69E7-48EB-9C9D-C63FAF92F210}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessGameCli", "GuessGameCli\GuessGameCli.csproj", "{F93DDDB9-BED9-486D-AC3A-AEEB2FDE84C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F8E4A8EC-69E7-48EB-9C9D-C63FAF92F210}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8E4A8EC-69E7-48EB-9C9D-C63FAF92F210}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8E4A8EC-69E7-48EB-9C9D-C63FAF92F210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93DDDB9-BED9-486D-AC3A-AEEB2FDE84C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93DDDB9-BED9-486D-AC3A-AEEB2FDE84C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93DDDB9-BED9-486D-AC3A-AEEB2FDE84C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93DDDB9-BED9-486D-AC3A-AEEB2FDE84C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
