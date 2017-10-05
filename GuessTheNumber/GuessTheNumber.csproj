@@ -94,9 +94,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GuessTheNumber.BL\GuessTheNumber.BL.csproj">
-      <Project>{A0CDD117-A414-41A8-966D-5BDDC5343E3F}</Project>
-      <Name>GuessTheNumber.BL</Name>
+    <ProjectReference Include="..\GuessTheNumber.VM\GuessTheNumber.VM.csproj">
+      <Project>{f8e4a8ec-69e7-48eb-9c9d-c63faf92f210}</Project>
+      <Name>GuessTheNumber.VM</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

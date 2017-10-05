@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Guess the number" Height="350" Width="525" MinWidth="525" MinHeight="350" MaxWidth="800" MaxHeight="600">
     <Grid>
+        <Grid.Resources>
+            <BooleanToVisibilityConverter x:Key="bool2vis" />
+        </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
@@ -20,10 +23,10 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.ColumnSpan="3" Text="Guess the number" Style="{StaticResource headerTextStyle}"/>
-        <TextBlock Name="OutputTextBlock" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Text="Start guessing a number." Style="{StaticResource outputTextStyle}" />
-        <TextBox Name="InputTextBox" Grid.Row="2" Grid.Column="1" Style="{StaticResource inputBoxStyle}"/>
-        <Button Name="GuessButton" Content="Guess" Grid.Column="1" Grid.Row="3" Click="Guess_Click" Style="{StaticResource buttonStyle}"/>
-        <Button Name="RunAgainButton" Content="Run again..."  Grid.Column="1" Grid.Row="3"  Visibility="Hidden" Click="RunAgain_Click" Style="{StaticResource buttonStyle}" />
+        <TextBlock Name="OutputTextBlock" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Text="{Binding Message, Mode=OneWay}" Style="{StaticResource outputTextStyle}" />
+        <TextBox Name="InputTextBox" Grid.Row="2" Grid.Column="1" Style="{StaticResource inputBoxStyle}" Text="{Binding Input, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Name="GuessButton" Content="Guess" Grid.Column="1" Grid.Row="3" Command="{Binding GuessCommand}" Style="{StaticResource buttonStyle}"/>
+        <Button Name="RunAgainButton" Content="Run again..."  Grid.Column="1" Grid.Row="3"  Visibility="Hidden" Command="{Binding RestartCommand}" Style="{StaticResource buttonStyle}" />
         <TextBlock Name="HighScoreTextBlock" Grid.Row="4" Grid.Column="0" Text="No Current High Score" VerticalAlignment="Center" Margin="10,0,0,0" />
     </Grid>
 </Window>

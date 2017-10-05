@@ -60,7 +60,7 @@ namespace GuessTheNumber.VM
 
         private bool CanGuess(object obj)
         {
-            return string.IsNullOrEmpty(Input) && int.TryParse(Input, out int result);
+            return !string.IsNullOrEmpty(Input) && int.TryParse(Input, out int result);
         }
 
         private void Restart(object obj)
